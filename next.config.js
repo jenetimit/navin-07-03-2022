@@ -2,6 +2,13 @@ const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
 const { i18n } = require("./next-i18next.config");
 
+module.exports = {
+  generateBuildId: async () => {
+    // You can, for example, get the latest git commit hash here
+    return 'my-build-id'
+  },
+}
+
 module.exports = withPWA({
   i18n,
   pwa: {
