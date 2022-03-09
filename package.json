@@ -7,6 +7,7 @@
     "frontend/*"
   ],
   "scripts": {
+<<<<<<< HEAD
     "clean": "yarn workspaces run rimraf \"{.next,node_modules,__generated__,.cache,src/graphql/*.d.ts}\" && rimraf node_modules",
     "gql-clean": "yarn workspaces run rimraf \"{__generated__,src/graphql/*.d.ts}\"",
     "dev:shop-rest": "yarn workspace @pick-bazar/shop-rest dev",
@@ -32,6 +33,12 @@
     "*.{js,ts,tsx,md,css}": [
       "prettier --write"
     ]
+=======
+    "dev": "next dev -p 3003",
+    "build": "next build --output public",
+    "webpack": "webpack --mode production",
+    "start": "next start -p 3003"
+>>>>>>> fec4ee5f20c1b0953582a2be0df5fa3ca735ae73
   },
   "dependencies": {
     "@chakra-ui/react": "^1.7.3",
