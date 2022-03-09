@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3003",
-    "build": "shop-rest build --output public",
+    "build": "build --output public",
     "webpack": "webpack --mode production",
     "start": "next start -p 3003"
   },
